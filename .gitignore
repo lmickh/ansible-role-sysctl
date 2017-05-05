@@ -1,0 +1,13 @@
+# Ansible related
+*.retry
+
+# Junk files
+*.swp
+*.DS_Store
+[Tt]humbs.db
+
+# Generated templates
+generated/
+build/**
+
+.vagrant

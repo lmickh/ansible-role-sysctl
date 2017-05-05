@@ -1,0 +1,11 @@
+---
+- name:  Create sysctl.d file
+  become: true
+  sysctl:
+    name: "{{ item.token }}"
+    value: "{{ item.value }}"
+    state: present
+    sysctl_file: "{{ sysctl_file }}"
+    reload: yes
+  with_items: "{{ sysctl_config }}"
+  tags: sysctl

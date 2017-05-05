@@ -1,0 +1,12 @@
+dependencies: []
+galaxy_info:
+  author: lmickh
+  description: Manage sysctl via /etc/sysctl.d
+  license: MIT
+  min_ansible_version: 2.2
+  platforms:
+    - name: EL
+      versions:
+        - 7
+  galaxy_tags:
+    - system
